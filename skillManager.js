@@ -131,7 +131,6 @@ function updateStats() {
 	$("div.descriptionContainer").html(descriptions);
 	var url = window.location.href.split("#")[0] + "#" + getHash();
 	$("a.permalink").attr("href",url);
-	$("a.permalink").html(url);
 	window.location.replace(url);
 }
 

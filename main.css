@@ -407,7 +407,16 @@ img.portrait {
 }
 
 .stamp {
-  display: inline-block;
-  transform: rotate(10deg);
+  display: block;
   color: orangered;
+  font-size: 0.8em;
+}
+
+@media (min-width: 80em) {
+  .stamp {
+    display: inline-block;
+    position: absolute;
+    transform: rotate(10deg);
+    margin: 0.6em 0 0 0.2em;
+  }
 }

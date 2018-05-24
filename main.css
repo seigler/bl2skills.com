@@ -186,6 +186,12 @@ body.choicePage .wrapper {
   height: 53px;
 }
 
+.skill-action {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
 .points {
   visibility: hidden;
   position: absolute;
@@ -243,7 +249,9 @@ legend {
   display: none;
 }
 
-.tree .description {
+.tree .description,
+.skill-action .description
+ {
   display: none;
   position: absolute;
   top: 0;
@@ -264,6 +272,11 @@ legend {
   right: 110%;
 }
 
+.skill-action .description {
+  top: 10%;
+  left: 105%;
+}
+
 .tier[data-level='4'] .description {
   top: auto;
   bottom: -59px;
@@ -279,7 +292,8 @@ legend {
   bottom: 0;
 }
 
-.tree .description h2 {
+.tree .description h2,
+.skill-action .description h2 {
   padding: 0.15em 0;
   margin-bottom: 0.15em;
   font-size: 125%;
@@ -359,6 +373,14 @@ legend {
 }
 
 .skill:hover .description:hover {
+  display: none;
+}
+
+.skill-action:hover .description {
+  display: block;
+}
+
+.skill-action:hover .description:hover {
   display: none;
 }
 

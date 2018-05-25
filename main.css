@@ -205,11 +205,16 @@ body.choicePage .wrapper {
   color: white;
 }
 
+.skill-action .points {
+  visibility: initial;
+}
+
 .skill.partial .points {
   color: #F80;
 }
 
-.skill.full .points {
+.skill.full .points,
+.skill-action .points {
   color: #0B0;
 }
 

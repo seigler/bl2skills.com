@@ -55,7 +55,7 @@ function updatePoints(skillHandle, change) {
 	var max = parseInt(skillHandle.attr("data-max"));
 	var charLevel = parseInt($("span.charLevel").text());
 	if(change > 0) {
-		if (points < max && treeTotal >= 5 * thisLevel && charLevel < 72) {
+		if (points < max && treeTotal >= 5 * thisLevel && charLevel < 80) {
 			++points;
 		}
 	} else {
